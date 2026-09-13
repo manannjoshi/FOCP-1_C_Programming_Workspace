@@ -1,9 +1,20 @@
 #include <stdio.h>
 
 int main(){
+    int rno;
+    char section;
+    double percentage;
 
-    printf("I love my new laptop");
-    scanf("PRESS ENTER TO EXIT");
+    printf("Enter your roll number, section and percentage\n>>> ");
+    scanf("%d %c%lf",&rno,&section,&percentage);
+
+    printf("Enter your roll number\n>>> ");
+    scanf("%d",&rno);
+
+    printf("Enter your section\n>>> ");
+    scanf(" %c",&section);
+
+    printf("\nDetails:\nRoll no: %d\nSection: %c\nPercentage: %0.2f%",rno,section,percentage);
 
     return 0;
 }
