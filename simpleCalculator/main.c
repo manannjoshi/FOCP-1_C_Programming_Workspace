@@ -2,6 +2,9 @@
 
 int main(){
 
+    double checkForValidDouble(double num);
+    char checkForValidOp(double num);
+
     double num1;
     double num2;
     char op;
@@ -17,26 +20,34 @@ int main(){
 
     printf("===========================\n");
     if(op=='+'){
-        double sum = num1+num2;
-        printf("First number : %0.2lf\nSecond Number : %0.2lf\nSum : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,sum,num1,op,num2,sum);
+        double result = num1+num2;
+        printf("First number : %0.2lf\nSecond Number : %0.2lf\nResult : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,result,num1,op,num2,result);
     }
 
     else if(op=='-'){
-        double sum = num1-num2;
-        printf("First number : %0.2lf\nSecond Number : %0.2lf\nSum : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,sum,num1,op,num2,sum);
+        double result = num1-num2;
+        printf("First number : %0.2lf\nSecond Number : %0.2lf\nResult : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,result,num1,op,num2,result);
     }
 
     else if(op=='*'){
-        double sum = num1*num2;
-        printf("First number : %lf\nSecond Number : %0.2lf\nSum : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,sum,num1,op,num2,sum);
+        double result = num1*num2;
+        printf("First number : %lf\nSecond Number : %0.2lf\nResult : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,result,num1,op,num2,result);
     }
 
     else if(op=='/'){
-        double sum = num1/num2;
-        printf("First number : %lf\nSecond Number : %0.2lf\nSum : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,sum,num1,op,num2,sum);
+        double result = num1/num2;
+        printf("First number : %lf\nSecond Number : %0.2lf\nResult : %0.2lf\n%0.2lf %c %0.2lf = %0.2lf",num1,num2,result,num1,op,num2,result);
     }
 
     printf("\n===========================\n");
 
     return 0;
+}
+
+double checkForValidDouble(double num){
+
+}
+
+char checkForValidOp(double num){
+
 }
