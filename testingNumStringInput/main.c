@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int checkForValidNum(int age);
+int checkForValidNum();
 
 int main(){
 
@@ -11,7 +11,8 @@ int main(){
     return 0;
 }
 
-int checkForValidNum(int age){
+int checkForValidNum(){
+    int age;
     while(scanf("%d",&age) != 1){
         int c;
         while((c=getchar()) != '\n' && c!= EOF);
