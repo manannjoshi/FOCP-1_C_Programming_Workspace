@@ -18,8 +18,11 @@ int main(){
     else if(num2>num1){
         printf("%d is smaller",num1);
     }
-    else{
+    else if(num1==num2){
         printf("Equal numbers");
+    }
+    else{
+        printf("Error");
     }
 
     return 0;
